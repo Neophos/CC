@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.0
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Animationtest.CSharp.Editor.Plugins", "UnityVS.Animationtest.CSharp.Editor.Plugins.csproj", "{387B7C00-D468-000D-DEDB-B976E3857ADE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Animationtest.CSharp.Plugins", "UnityVS.Animationtest.CSharp.Plugins.csproj", "{43FE564A-3C0E-05DC-BB1D-7AFF5B9CA02A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Animationtest.CSharp", "UnityVS.Animationtest.CSharp.csproj", "{7337CDB8-F806-D46A-2A4F-258CA56979E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Animationtest.CSharp.Editor", "UnityVS.Animationtest.CSharp.Editor.csproj", "{77AE9D7F-E3A2-7F1C-0E59-54EA6A0CE672}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{387B7C00-D468-000D-DEDB-B976E3857ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{387B7C00-D468-000D-DEDB-B976E3857ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{387B7C00-D468-000D-DEDB-B976E3857ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{387B7C00-D468-000D-DEDB-B976E3857ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43FE564A-3C0E-05DC-BB1D-7AFF5B9CA02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43FE564A-3C0E-05DC-BB1D-7AFF5B9CA02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43FE564A-3C0E-05DC-BB1D-7AFF5B9CA02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43FE564A-3C0E-05DC-BB1D-7AFF5B9CA02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7337CDB8-F806-D46A-2A4F-258CA56979E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7337CDB8-F806-D46A-2A4F-258CA56979E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7337CDB8-F806-D46A-2A4F-258CA56979E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7337CDB8-F806-D46A-2A4F-258CA56979E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AE9D7F-E3A2-7F1C-0E59-54EA6A0CE672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AE9D7F-E3A2-7F1C-0E59-54EA6A0CE672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AE9D7F-E3A2-7F1C-0E59-54EA6A0CE672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AE9D7F-E3A2-7F1C-0E59-54EA6A0CE672}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
