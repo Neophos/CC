@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+using System.IO;
 
 [CustomEditor(typeof(Framedata))]
 public class FramedataEditor : Editor
@@ -75,6 +76,16 @@ public class FramedataEditor : Editor
         if (GUILayout.Button("Add new move"))
         {
             t.moves.Add(new Framedata.Move());
+        }
+
+        if(GUILayout.Button("Exportu~ JSON"))
+        {
+            ExportJsonFile();
+        }
+
+        if(GUILayout.Button("Import JSON"))
+        {
+            ImportJsonFile();
         }
 
 
@@ -522,6 +533,8 @@ public class FramedataEditor : Editor
         //Apply the changes to our list
         GetTarget.ApplyModifiedProperties();
 
+        AutoSaveJson();
+
         Handles.EndGUI();
     }
 
@@ -557,5 +570,37 @@ public class FramedataEditor : Editor
         sd = temp - (hitActive.intValue + framesOfRecovery.intValue);
 
         return sd;
+    }
+
+    void ImportJsonFile()
+    {
+        JsonUtility.FromJsonOverwrite(File.ReadAllText(string.Format(Application.persistentDataPath + "/Resources/Character/{0}.json", "rawr")), t);
+    }
+
+    void ExportJsonFile()
+    {
+        string path = string.Format(Application.persistentDataPath + "/Resources/Character/{0}.json", "rawr");
+
+        CheckAndMakeDirectory();
+
+        string json = JsonUtility.ToJson(t);
+
+        File.WriteAllText(path, json);
+    }
+
+    void AutoSaveJson()
+    {
+        string path = string.Format(Application.persistentDataPath + "/Resources/Character/{0}.json", "rawr.autosave");
+
+        CheckAndMakeDirectory();
+
+        string json = JsonUtility.ToJson(t);
+
+        File.WriteAllText(path, json);
+    }
+
+    void CheckAndMakeDirectory()
+    {
+        Directory.CreateDirectory(Application.persistentDataPath + "/Resources/Character/hej/ohnej/kyaaa");
     }
 }

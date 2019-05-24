@@ -32,6 +32,8 @@ public class Characterdata : ScriptableObject
         public float airControlFactor;
         public float verticalJumpSpeed;
         public float horizontalJumpSpeed;
+
+        public Framedata framedata;
     }
 
     public Character character;
